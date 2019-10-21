@@ -1,0 +1,14 @@
+.App {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+}
+
+.box {
+  font-family: "PT Serif", serif;
+}
+
+.quiet {
+  font-weight: 500;
+}
+
+/*# sourceMappingURL=index.css.map */
