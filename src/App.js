@@ -30,27 +30,6 @@ class App extends Component {
             project management, strategy, sales, web development
           </p>
         </article>
-        <article class="box">
-          <img src="https://picsum.photos/200" alt="Thomson Hart" />
-        </article>
-        <article class="box">
-          <img src="https://picsum.photos/200" alt="Thomson Hart" />
-        </article>
-        <article class="box">
-          <img src="https://picsum.photos/200" alt="Thomson Hart" />
-        </article>
-        <article class="box">
-          <img src="https://picsum.photos/200" alt="Thomson Hart" />
-        </article>
-        <article class="box">
-          <img src="https://picsum.photos/200" alt="Thomson Hart" />
-        </article>
-        <article class="box">
-          <img src="https://picsum.photos/200" alt="Thomson Hart" />
-        </article>
-        <article class="box">
-          <img src="https://picsum.photos/200" alt="Thomson Hart" />
-        </article>
       </div>
     );
   }
