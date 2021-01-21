@@ -1,0 +1,172 @@
+// Gitan Latin Regular
+// font-family: gitan-latin, sans-serif
+// font-weight: 400
+// font-style: normal
+// Gitan Latin Italic
+// font-family: gitan-latin, sans-serif
+// font-weight: 400
+// font-style: italic
+// Gitan Latin Bold Italic
+// font-family: gitan-latin, sans-serif
+// font-weight: 700
+// font-style: italic
+// Gitan Latin Bold
+// font-family: gitan-latin, sans-serif
+// font-weight: 700
+// font-style: normal
+// Filson Pro Bold
+// font-family: filson-pro, sans-serif
+// font-weight: 700
+// font-style: normal
+// Filson Pro Bold Italic
+// font-family: filson-pro, sans-serif
+// font-weight: 700
+// font-style: italic
+body
+  font-family: $longform
+a,
+a:visited,
+a:hover
+  color: $_ink
+  transition: all .2s ease-in-out
+.meat a
+  background: pink
+  &:hover
+    background: lighten(pink, 10%)
+    text-decoration: none
+.banner a
+  text-decoration: underline
+// ————————————————————————————————————————
+// Headings (only use h1-h4)
+h1,h2,h3,h4,h5,h6
+  font-family: $headings
+  font-weight: 700
+  line-height: 1.2
+  margin: 2rem 0 1rem
+h1
+  font-size: 3rem
+h2
+  font-size: 2rem
+h3
+  font-size: 1.6rem
+h4,h5,h6
+  font-size: 1.4rem
+blockquote
+  font-family: $headings
+  margin-top: 1rem
+  margin-left: 3rem
+  margin-right: 3rem
+  text-align: justify
+// ————————————————————————————————————————
+// Main Layout
+.girdle
+  margin: 0 auto
+  max-width: (750 / $rem) + em
+.banner
+  padding: 10rem 0
+  background: $blue
+  color: $white
+.meat
+  padding: 5rem 0 10rem
+  background: $white
+  color: $blue
+// ————————————————————————————————————————
+// Paragraphs
+p,
+li,
+dt,
+dd
+  font-size: (18 / $rem) * 1 + rem
+p
+  line-height: 1.7
+  margin: 0
+p + p
+  text-indent: 2rem
+dt
+  font-family: $headings
+// ————————————————————————————————————————
+// Lists
+ul,
+ol,
+dl
+  margin: 1rem 0
+ul,
+ol
+  padding: 0 0 0 2rem
+dt
+  padding-top: 1rem
+dd
+  margin: 0
+// ————————————————————————————————————————
+// Navigation
+.top-nav,
+.second-nav
+  list-style: none
+  padding: 0
+  position: fixed
+  text-align: center
+  li
+    display: inline-block
+.second-nav
+  bottom: 0
+  right: 0
+  writing-mode: vertical-lr
+  li
+    padding: 1rem .5rem
+.top-nav
+  background: $white
+  left: 0
+  right: 0
+  top: 0
+  transition: all 0.25s ease-out
+  transform: translateY(0)
+  li
+    padding: 1rem 3rem
+.hide-nav
+  .top-nav
+    opacity: 0
+    transform: translateY(-100%)
+.nav-item
+  text-transform: uppercase
+.card
+  border: 1px solid rgba($_ink, 0.2)
+  border-bottom: 0.2rem solid $_ink
+  box-shadow: 0 1rem 4rem rgba($_ink, 0.05)
+  padding: 0 2rem 2rem
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  flex-flow: column
+  & + &
+    margin-top: 3rem
+.card-logo
+  float: right
+  margin: 2rem 0rem 2rem 2rem
+  max-width: (140 / $rem) + em
+mark
+  background: lightgoldenrodyellow
+.active
+  background: pink
+  color: red
+// ————————————————————————————————————————
+// story-covers
+.story-covers
+  display: flex
+  flex-wrap: wrap
+  list-style: none
+  padding: 0
+  & > li
+    text-align: center
+    flex-grow: 4
+    font-size: 3ch
+    & a
+      border: 1rem double pink
+      display: block
+      background: pink
+      padding: 6rem 3vw
+      +ucs(.1rem)
+    & a:hover
+      border: 1rem double pink
+      background: #00087c
+      color: white
+      text-decoration: none
