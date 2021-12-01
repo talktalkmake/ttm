@@ -8,6 +8,7 @@ import Index        from "./components/index";
 import UnbeatenRun  from "./components/UnbeatenRun";
 import JollyEdition from "./components/JollyEdition";
 import Work         from "./components/Work";
+import Contact      from "./components/Contact";
 import $            from "jquery";
 
 import "bootstrap/dist/css/bootstrap-reboot.min.css";
@@ -30,6 +31,7 @@ const App = () => {
         <Switch>
           <Route path={"/cv"} component={CV} />
           <Route path={"/work"} exact component={Work} />
+          <Route path={"/contact"} exact component={Contact} />
           <Route path={"/work/unbeaten-run"} component={UnbeatenRun} />
           <Route path={"/work/jolly-edition"} component={JollyEdition} />
           <Route path={"/writing"} component={Writing} />
